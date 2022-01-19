@@ -117,6 +117,7 @@ get_request().then(function (data) {
   }
 
   console.log(lastof)
+  console.log('test')
 
   /*wow.forEach(element => {
     where += "\n## v" + element + "\n```sh\n$ wget -O - https://raw.githubusercontent.com/" + GITHUB_REPOSITORY + "/master/install-node-v" + element + ".sh | bash\n```\n"
