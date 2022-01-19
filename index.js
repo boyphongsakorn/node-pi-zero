@@ -84,8 +84,8 @@ get_request().then(function (data) {
 
   wow.forEach(element => {
     //if element.substring(1,2) not found in version array then add it
-    if (version.indexOf(element.substring(1, 2)) == -1) {
-      version.push(element.substring(1, 2))
+    if (version.indexOf(element.substring(0, 1)) == -1) {
+      version.push(element.substring(0, 1))
     }
   })
 
@@ -94,7 +94,7 @@ get_request().then(function (data) {
   for (let i = 0; i < version.length; i++) {
     //let temp = [];
     wow.forEach(element => {
-      if (element.substring(1, 2) == version[i] && element.substring(1, 2) != version[i+1]) {
+      if (element.substring(0, 1) == version[i] && element.substring(0, 1) != version[i+1]) {
         //temp.push(element)
         lastof.push(element)
       }
