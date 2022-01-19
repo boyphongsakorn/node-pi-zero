@@ -84,14 +84,20 @@ get_request().then(function (data) {
 
   wow.forEach(element => {
     //if element.substring(1,2) not found in version array then add it
-    if (version.indexOf(element.substring(0, 1)) == -1) {
-      version.push(element.substring(0, 1))
+    //get number before .
+    if (version.indexOf(element.substring(0, 2)) == -1) {
+      //if element.substring(0,2) has . then remove .
+      /*if (element.substring(0, 2).includes('.')) {
+        version.push(element.substring(0, 2).replace('.', ''))
+      } else {*/
+        version.push(element.substring(0, 2))
+      //}
     }
   })
 
   console.log(version)
 
-  for (let i = 0; i < version.length; i++) {
+  /*for (let i = 0; i < version.length; i++) {
     //let temp = [];
     wow.forEach(element => {
       if (element.substring(0, 1) == version[i] && element.substring(0, 1) != version[i+1]) {
@@ -100,6 +106,14 @@ get_request().then(function (data) {
       }
     })
     //lastof.push(temp[temp.length - 1])
+  }*/
+
+  for(let i = 0; i < wow.length; i++) {
+    for(let j = 0; j < version.length; j++) {
+      if(wow[i].substring(0, 2) == version[j] && wow[i].substring(0, 2) != version[j+1]) {
+        lastof.push(wow[i])
+      }
+    }
   }
 
   console.log(lastof)
