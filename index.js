@@ -79,7 +79,32 @@ async function get_request() {
 get_request().then(function (data) {
   wow = data.map(a => a.split('.').map(n => +n + 100000).join('.')).sort().map(a => a.split('.').map(n => +n - 100000).join('.'));
 
+  let version = [];
+  let lastof = [];
+
   wow.forEach(element => {
+    //if element.substring(1,2) not found in version array then add it
+    if (version.indexOf(element.substring(1, 2)) == -1) {
+      version.push(element.substring(1, 2))
+    }
+  })
+
+  for (let i = 0; i < version.length; i++) {
+    //let temp = [];
+    wow.forEach(element => {
+      if (element.substring(1, 2) == version[i] && element.substring(1, 2) != version[i+1]) {
+        //temp.push(element)
+        lastof.push(element)
+      }
+    })
+    //lastof.push(temp[temp.length - 1])
+  }
+
+  /*wow.forEach(element => {
+    where += "\n## v" + element + "\n```sh\n$ wget -O - https://raw.githubusercontent.com/" + GITHUB_REPOSITORY + "/master/install-node-v" + element + ".sh | bash\n```\n"
+  });*/
+
+  lastof.forEach(element => {
     where += "\n## v" + element + "\n```sh\n$ wget -O - https://raw.githubusercontent.com/" + GITHUB_REPOSITORY + "/master/install-node-v" + element + ".sh | bash\n```\n"
   });
 
