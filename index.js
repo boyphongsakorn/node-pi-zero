@@ -89,6 +89,8 @@ get_request().then(function (data) {
     }
   })
 
+  console.log(version)
+
   for (let i = 0; i < version.length; i++) {
     //let temp = [];
     wow.forEach(element => {
@@ -99,6 +101,8 @@ get_request().then(function (data) {
     })
     //lastof.push(temp[temp.length - 1])
   }
+
+  console.log(lastof)
 
   /*wow.forEach(element => {
     where += "\n## v" + element + "\n```sh\n$ wget -O - https://raw.githubusercontent.com/" + GITHUB_REPOSITORY + "/master/install-node-v" + element + ".sh | bash\n```\n"
@@ -121,6 +125,8 @@ get_request().then(function (data) {
       console.error(err)
       return
     }
+    const data = fs.readFileSync('./README.md', 'utf8')
+    console.log(data)
     //file written successfully
   })
 })
