@@ -2039,6 +2039,11 @@ $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master
 $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v17.4.0.sh | bash
 ```
 
+## v17.5.0
+```sh
+$ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v17.5.0.sh | bash
+```
+
 
 ## Using global npm modules? (ie mocha, eslint, etc)
 
