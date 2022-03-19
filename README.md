@@ -1544,6 +1544,11 @@ $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master
 $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v12.22.10.sh | bash
 ```
 
+## v12.22.11
+```sh
+$ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v12.22.11.sh | bash
+```
+
 ## v13.0.0
 ```sh
 $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v13.0.0.sh | bash
@@ -1804,6 +1809,11 @@ $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master
 $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v14.19.0.sh | bash
 ```
 
+## v14.19.1
+```sh
+$ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v14.19.1.sh | bash
+```
+
 ## v15.0.0
 ```sh
 $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v15.0.0.sh | bash
@@ -2009,6 +2019,11 @@ $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master
 $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v16.14.1.sh | bash
 ```
 
+## v16.14.2
+```sh
+$ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v16.14.2.sh | bash
+```
+
 ## v17.0.0
 ```sh
 $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v17.0.0.sh | bash
@@ -2062,6 +2077,11 @@ $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master
 ## v17.7.1
 ```sh
 $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v17.7.1.sh | bash
+```
+
+## v17.7.2
+```sh
+$ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v17.7.2.sh | bash
 ```
 
 
