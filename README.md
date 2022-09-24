@@ -2064,6 +2064,11 @@ $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master
 $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v16.17.0.sh | bash
 ```
 
+## v16.17.1
+```sh
+$ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v16.17.1.sh | bash
+```
+
 ## v17.0.0
 ```sh
 $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v17.0.0.sh | bash
@@ -2182,6 +2187,11 @@ $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master
 ## v18.9.0
 ```sh
 $ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v18.9.0.sh | bash
+```
+
+## v18.9.1
+```sh
+$ wget -O - https://raw.githubusercontent.com/boyphongsakorn/node-pi-zero/master/install-node-v18.9.1.sh | bash
 ```
 
 
